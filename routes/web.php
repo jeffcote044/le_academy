@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Mail;
 */
 
 
-Route::get('/old', HomeController::class)->name('home'); // middleware('subscription')
+Route::get('/old', HomeController::class)->name('home.old'); // middleware('subscription')
 
 Route::get('/', function () {
     $course = Course::find(1);
