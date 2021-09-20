@@ -237,7 +237,7 @@
                                                     </div>
                                                     <p class="text-xs text-gray-700 mb-2 ">* Pago único y en dólares</p>
                                                     <p class="text-sm text-accent-400 "> <i class="far fa-clock"></i> ¡Oferta disponible por tiempo limitado</b>! </p>
-                                                    <p class="text-sm text-accent-400 hidden"> <i class="far fa-clock"></i> ¡Esta oferta termina en <b>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->discount->expires_at))->diffForHumans() }}</b>! </p>
+                                                    <p class="text-sm text-accent-400 hidden"> <i class="far fa-clock"></i> ¡Esta oferta terminará en <b>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->discount->expires_at))->diffForHumans() }}</b>! </p>
                                                     @else
                                                     <p class="text-4xl text-accent-400 font-bold text-center">{{$course->price->name}}</p>
                                                 @endif
